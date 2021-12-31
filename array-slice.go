@@ -14,7 +14,14 @@ func main() {
 	// b = append(b, 300) NG
 	fmt.Println(b)
 
-	// スライス
+	/* スライス
+		スライスの作成方法は３つ
+		1. リテラル
+		2. 簡易スライス式
+		3. 組み込み関数make
+	*/
+
+	// リテラル
 	c := []int{1, 2, 3, 4}
 	c = append(c, 5)
 	fmt.Println(c)
@@ -31,7 +38,7 @@ func main() {
 	}
 	fmt.Println(board)
 
-	// make
+	// make (make([]要素の型, 要素の数, 容量))
 	d := make([]int, 3, 5)
 	fmt.Printf("len=%d cap=%d value=%v\n", len(d), cap(d), d)
 	d = append(d, 0, 0)
