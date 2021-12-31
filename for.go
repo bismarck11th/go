@@ -23,4 +23,11 @@ func main() {
 		fmt.Println(sum)
 	}
 	fmt.Println(sum)
+	
+	// 無限ループ
+	/*
+	for {
+		fmt.Println("Hello")
+	}
+	*/
 }
